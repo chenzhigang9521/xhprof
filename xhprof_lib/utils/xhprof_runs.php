@@ -98,6 +98,7 @@ class XHProfRuns_Default implements iXHProfRuns
 
         if (empty($dir)) {
             $dir = ini_get("xhprof.output_dir");
+            $dir = '/var/www/html/xhprof/temp';
             if (empty($dir)) {
                 $dir = sys_get_temp_dir();
 
